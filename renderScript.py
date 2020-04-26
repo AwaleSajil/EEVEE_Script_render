@@ -13,8 +13,10 @@ def looop(start_frame, start_frame, location):
 
 
 
+argv = sys.argv
+list_of_arg = argv[argv.index("--") + 1:]  # get all args after "--"
+
 list_of_arg = str(sys.argv)
-list_of_arg = list_of_arg[1:]
 
 location = str(list_of_arg[0])
 start_frame = int(list_of_arg[1])
